@@ -134,7 +134,7 @@ Stockholm känns som en ny början. Jag känner mig som ett skepp som just kasta
     id: 'gentle-branding',
     slug: 'branding-gentile',
     date: '2025-05-20',
-    image: '/blog/portfolio-1.jpg',
+    image: '/blog/portfolio-3.jpg',
     translations: {
       it: {
         title: 'Fantasiateljé: una nuova identità',
@@ -205,7 +205,7 @@ Och det här är bara början.\n`
     id: 'slow-web',
     slug: 'slow-web',
     date: '2024-12-10',
-    image: '/blog/portfolio-2.jpg',
+    image: '/blog/portfolio-3.jpg',
     translations: {
       it: {
         title: 'Slow web: siti piccoli, chiari, respirabili',
@@ -231,7 +231,7 @@ Och det här är bara början.\n`
     id: 'studio-notes',
     slug: 'note-di-studio',
     date: '2024-11-05',
-    image: '/blog/portfolio-4.jpg',
+    image: '/blog/portfolio-3.jpg',
     translations: {
       it: {
         title: 'Note di studio: piccoli riti prima di scattare',
