@@ -324,35 +324,20 @@ pillar4_link: 'Translations',
 
 
     
-portfolio_section_title: 'Photography & projects',
+portfolio_section_title: 'Photography & Projects',
 
-portfolio_editorial_label: 'Editorial',
-portfolio_editorial_title: 'Quiet autumn portraits',
-portfolio_editorial_description: 'A series of intimate portraits in natural light, shot between woods and warm interiors. Focus on atmosphere, small gestures and details that tell a story.',
-portfolio_editorial_role: 'Role: photography, colour grading',
-portfolio_editorial_client: 'Client: personal work / independent creatives',
-portfolio_editorial_year: 'Year: 2024–2025',
+    portfolio_editorial_label: 'Photography',
+    portfolio_brand_label: 'Branding',
+    portfolio_web_label: 'Web & Layout',
 
-portfolio_brand_label: 'Branding',
-portfolio_brand_title: 'Identity for small makers',
-portfolio_brand_description: 'Essential logotype, warm palette and basic materials for a small craft business. Clear, warm and recognisable without overloading.',
-portfolio_brand_role: 'Role: visual direction, logo, basic materials',
-portfolio_brand_client: 'Client: small craft brand',
-portfolio_brand_year: 'Year: 2024',
+    portfolio_modal_photo_title: 'Narrative Photography',
+    portfolio_modal_brand_title: 'Visual Identity',
+    portfolio_modal_web_title: 'Digital Projects',
 
-portfolio_web_label: 'Web & portfolio',
-portfolio_web_title: 'Mini-site for creatives',
-portfolio_web_description: 'A light one-page website to highlight work, services and contact. Simple layout, clear tone of voice, images at the centre.',
-portfolio_web_role: 'Role: structure, UI, light copy',
-portfolio_web_client: 'Client: freelance creative',
-portfolio_web_year: 'Year: 2025',
-
-portfolio_editorial_intro: 'A selection of images from a narrative portrait series: natural light, quiet details and small gestures that say more than words.',
-portfolio_editorial_block1: 'The first images focus on atmosphere: woods, warm interiors and textures that frame the person.',
-portfolio_editorial_block2: 'Here the gaze becomes more intimate: hands, profiles and personal objects that help build a coherent visual story.',
-
-
-
+    portfolio_modal_photo_intro: 'A selection of portraits, natural light, and quiet atmospheres.',
+    portfolio_modal_brand_intro: 'Visual studies, palettes, and small identity systems.',
+    portfolio_modal_web_intro: 'Clear layouts, essential structure, and attention to visual rhythm.',
+  
 
 
 
@@ -628,36 +613,20 @@ pillar4_link: 'Översättningar',
 
     
 
-    portfolio_section_title: 'Foto & projekt',
+portfolio_section_title: 'Fotografi & projekt',
 
-portfolio_editorial_label: 'Editorial',
-portfolio_editorial_title: 'Tysta höstporträtt',
-portfolio_editorial_description: 'En serie intima porträtt i naturligt ljus, tagna mellan skog och varma interiörer. Fokus på stämning, små gester och detaljer som berättar om personen.',
-portfolio_editorial_role: 'Roll: fotografi, färgredigering',
-portfolio_editorial_client: 'Kund: personligt projekt / frilansare',
-portfolio_editorial_year: 'År: 2024–2025',
+    portfolio_editorial_label: 'Fotografi',
+    portfolio_brand_label: 'Branding',
+    portfolio_web_label: 'Webb & layout',
 
-portfolio_brand_label: 'Branding',
-portfolio_brand_title: 'Identitet för små hantverkare',
-portfolio_brand_description: 'En enkel logotyp, varm färgpalett och grundläggande material för en hantverksverksamhet. Tydligt, varmt och igenkännbart utan onödiga lager.',
-portfolio_brand_role: 'Roll: visuell riktning, logotyp, basmaterial',
-portfolio_brand_client: 'Kund: litet hantverksvarumärke',
-portfolio_brand_year: 'År: 2024',
+    portfolio_modal_photo_title: 'Berättande fotografi',
+    portfolio_modal_brand_title: 'Visuell identitet',
+    portfolio_modal_web_title: 'Digitala projekt',
 
-portfolio_web_label: 'Webb & portfolio',
-portfolio_web_title: 'Minisajt för kreativa',
-portfolio_web_description: 'En lätt one-page för att visa upp arbeten, tjänster och kontakt. Enkel layout, tydlig ton och bilderna i centrum.',
-portfolio_web_role: 'Roll: struktur, UI, lätt copy',
-portfolio_web_client: 'Kund: frilans kreativ',
-portfolio_web_year: 'År: 2025',
-
-portfolio_editorial_intro: 'Ett urval bilder från en berättande porträttserie: naturligt ljus, stilla detaljer och små gester som säger mer än ord.',
-portfolio_editorial_block1: 'De första bilderna fokuserar på stämning: skog, varma interiörer och texturer som ramar in personen.',
-portfolio_editorial_block2: 'Här blir blicken mer intim: händer, profiler och personliga föremål som bygger upp en sammanhängande visuell berättelse.',
-
-
-
-
+    portfolio_modal_photo_intro: 'Ett urval porträtt, naturligt ljus och stilla stämningar.',
+    portfolio_modal_brand_intro: 'Visuella studier, paletter och små identitetssystem.',
+    portfolio_modal_web_intro: 'Tydliga layouter, enkel struktur och fokus på visuell rytm.',
+ 
 
 
 

@@ -120,11 +120,11 @@ useEffect(() => {
       <main className="mt-6 grid gap-6 grid-cols-1 lg:grid-cols-[minmax(0,1.9fr)_minmax(0,1.2fr)] items-start">
   <section className="flex flex-col gap-6">
     <Reveal as="div">
-      <PortfolioSection t={t} />
+      <PortfolioSection t={t} lang={lang} />
     </Reveal>
 
     <Reveal as="div">
-      <AboutSection t={t} />
+      <AboutSection t={t} lang={lang} />
     </Reveal>
 
     <Reveal as="div">
