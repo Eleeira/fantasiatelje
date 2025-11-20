@@ -1,0 +1,278 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Quimil";
+  src: url("/fonts/Quimil-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Qui definisci i colori personalizzati che usiamo nei component */
+@theme {
+  --color-ft-bg: #050507;
+  --color-ft-bgAlt: #151519;
+  --color-ft-card: #19191f;
+  --color-ft-cardSoft: #202028;
+  --color-ft-accent: #8a5630;
+  --color-ft-accentSoft: #b8753e;
+  --color-ft-accentDark: #5a351c;
+  --color-ft-textMain: #f4eee6;
+  --color-ft-textSoft: #d6cec2;
+  --color-ft-textMuted: #9b9182;
+  --color-ft-borderSubtle: #2a2a32;
+
+  /* Ombra personalizzata -> utility: shadow-ft-soft */
+  --shadow-ft-soft: 0 18px 40px rgba(0, 0, 0, 0.6);
+
+  --font-quimil: "Quimil", system-ui, sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  @apply min-h-screen m-0 bg-[radial-gradient(circle_at_top,#251712_0,#050507_55%)] text-ft-textMain;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+
+
+@layer components {
+  .section-title-bar {
+    @apply bg-ft-accentDark text-ft-textSoft 
+           w-full 
+           px-4 py-2 
+           text-sm uppercase tracking-[0.15em] 
+           border-b border-white/10;
+  }
+}
+
+@layer components {
+  .fantasia-glow {
+    text-shadow:
+      0 0 12px rgba(184, 117, 62, 0.25),   /* bagliore rame */
+      0 0 25px rgba(184, 117, 62, 0.15);   /* alone più largo */
+  }
+}
+
+
+@layer components {
+  .fade-up {
+    opacity: 0;
+    transform: translateY(12px);
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .timeline-dot {
+    box-shadow: 0 0 0 5px rgba(138, 86, 48, 0.20);
+  }
+}
+
+
+
+
+
+@keyframes fade-in {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@keyframes scale-in {
+  from { transform: scale(0.96); opacity: 0 }
+  to { transform: scale(1); opacity: 1 }
+}
+
+.animate-fade-in {
+  animation: fade-in .25s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scale-in .25s ease-out forwards;
+}
+
+
+
+
+
+
+@keyframes blogScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.blog-strip-track {
+  width: max-content;
+  animation: blogScroll 40s linear infinite;
+}
+
+/* opzionale: pausa quando il mouse è sopra la card */
+#blog:hover .blog-strip-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blog-strip-track {
+    animation: none;
+  }
+}
+
+
+
+
+
+
+
+
+a, button {
+  cursor: pointer;
+}
+
+
+.page {
+  @apply max-w-5xl mx-auto px-5 pb-12;
+}
+
+.card {
+  @apply bg-ft-card rounded-none shadow-ft-soft border border-white/5;
+  margin-top: 6px
+}
+
+.card-title {
+  @apply text-[0.8rem] tracking-[0.18em] uppercase text-ft-textMuted;
+}
+
+
+@keyframes langPulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+@keyframes fadeSwap {
+  0%   { opacity: 0; transform: translateY(4px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@layer utilities {
+  .lang-active-anim {
+    animation: langPulse 0.18s ease-out;
+  }
+
+  .animate-fade-swap {
+    animation: fadeSwap 0.50s ease-out;
+  }
+}
+
+
+@keyframes fadeUpOnScroll {
+  0% {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer utilities {
+  .reveal-hidden {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  .reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeUpOnScroll 0.5s ease-out; /* ~mezzo secondo */
+  }
+}
+
+
+@keyframes bokehFloat {
+  0% {
+    transform: translateY(-10vh) translateX(0) scale(1);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(110vh) translateX(12px) scale(1.05);
+    opacity: 0;
+  }
+}
+
+/* layer globale per i pallini bokeh */
+#global-bokeh {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: -1; /* sempre dietro a tutto */
+  overflow: hidden;
+}
+
+/* singolo blob bokeh */
+.bokeh-dot {
+  position: absolute;
+  top: -15vh;
+  border-radius: 9999px;
+  filter: blur(10px);
+  opacity: 0.5;
+  mix-blend-mode: screen; /* dà un effetto più luminoso */
+  animation: bokehFloat linear infinite;
+}
+
+
+
+
+
+.dock-contact-link {
+  position: relative;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--color-ft-accentSoft);
+  transition: color .25s ease;
+}
+
+.dock-contact-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 1px;
+  background-color: var(--color-ft-accentSoft);
+  transition: width .25s ease;
+}
+
+.dock-contact-link:hover {
+  color: #fbbf24; /* amber-300 */
+}
+
+.dock-contact-link:hover::after {
+  width: 100%;
+}
