@@ -133,26 +133,71 @@ Stockholm känns som en ny början. Jag känner mig som ett skepp som just kasta
   {
     id: 'gentle-branding',
     slug: 'branding-gentile',
-    date: '2025-01-15',
+    date: '2025-05-20',
     image: '/blog/portfolio-1.jpg',
     translations: {
       it: {
-        title: 'Branding gentile per piccoli atelier',
+        title: 'Fantasiateljé: una nuova identità',
         excerpt:
           'Palette morbide, loghi essenziali e identità visive che non urlano ma sussurrano.',
-        content: `Un piccolo studio su come penso il branding per realtà artigiane e progetti culturali.\n\nMeno rumore, più riconoscibilità, più storie.`
+        content: `Quando sono arrivata in Svezia, ho capito subito che la mia vita stava entrando in un nuovo capitolo. Era come se l’aria fredda e i silenzi lunghi di questo paese mi stessero dicendo, con gentilezza: "Ok, è tempo di reinventarsi." \n
+E così ho fatto.\n
+\n
+Mi portavo dietro tre passioni che negli anni avevo coltivato quasi in parallelo: la programmazione, il design e la fotografia. Tre fili diversi che però, nel mio immaginario, non erano mai stati realmente separati. Volevo trovare un modo per intrecciarli e trasformarli in qualcosa che mi rappresentasse davvero. Non solo un lavoro, ma un mestiere capace di gratificarmi e, allo stesso tempo, aiutare le persone a dare forma ai loro progetti.\n
+\n
+Fantasiateljé è nato così: da un bisogno, da un sogno e da un senso di casa.\n
+\n
+Perché proprio "ateljé"? Perché, in Svezia, un ateljé non è solo uno studio. È uno spazio vissuto, intimo, pieno di idee e oggetti che raccontano una storia. Un luogo dove nulla è veramente minimal, anche se lo è nella sua essenza. Perché le case svedesi, quelle vere e non da rivista, sono calde. Hanno lampade accese alle quattro del pomeriggio, tazze lasciate sul tavolo, scaffali pieni di libri diversi tra loro. Sono luoghi dove si respira quotidianità, famiglia, creatività.\n
+\n
+E questa atmosfera mi ha ispirata profondamente.\n
+Ho voluto che Fantasiateljé avesse la stessa energia: calda, accogliente, sincera. Un posto dove la tecnica incontra la sensibilità, dove il digitale non è freddo, dove un progetto non è mai solo un progetto.\n
+\n
+Fantasiateljé è il mio modo di unire storie, immagini, colori, codice.\n
+È un ponte tra ciò che so fare e ciò che amo, tra il mio percorso e il percorso di chi si affida a me.\n
+\n
+Ed è solo l’inizio.\n`
       },
       en: {
-        title: 'Gentle branding for small studios',
+        title: 'Fantasiateljé: a new identity',
         excerpt:
           'Soft palettes, essential logos and visual identities that whisper instead of shout.',
-        content: `A short reflection on how I approach branding for small businesses and cultural projects.\n\nLess noise, more coherence, more stories.`
+        content: `When I arrived in Sweden, I immediately felt that my life was stepping into a new chapter. It was as if the cold air and long silences of this country were gently telling me: "Alright, time to reinvent yourself." \n
+So I did.\n
+\n
+I carried with me three passions I had been nurturing for years: programming, design, and photography. Three different threads that, in my mind, had never truly been separate. I wanted to weave them together and turn them into something that genuinely represented me. Not just a job, but a craft — something fulfilling for me and helpful for the people who trusted me with their projects.\n
+\n
+That’s how Fantasiateljé was born: from a need, from a dream, and from a sense of home.\n
+\n
+Why "ateljé"? Because in Sweden, an ateljé isn’t just a studio. It’s a lived-in space: intimate, warm, full of ideas and objects that tell a story. A place that isn’t truly minimal, even if it may appear so at first glance. Real Swedish homes — the ones you don’t see in magazines — are cozy. Lamps glowing at four in the afternoon, mugs left on the table, shelves overflowing with books that don’t match at all. They’re places where everyday life, family, and creativity breathe.\n
+\n
+That atmosphere inspired me deeply.\n
+I wanted Fantasiateljé to carry the same energy: warm, welcoming, sincere. A place where technique meets sensitivity, where digital work doesn’t feel cold, where a project is never just a project.\n
+\n
+Fantasiateljé is my way of bringing together stories, images, colors, and code.\n
+A bridge between what I know, what I love, and the people who choose to walk with me.\n
+\n
+And this is just the beginning.\n`
       },
       sv: {
-        title: 'Varsam branding för små ateljéer',
+        title: 'Fantasiateljé: en ny identitet',
         excerpt:
           'Mjuka paletter, enkla logotyper och visuella identiteter som viskar istället för att ropa.',
-        content: `En kort reflektion kring hur jag arbetar med branding för hantverkare och kulturella projekt.\n\nMindre brus, mer igenkänning och fler berättelser.`
+        content: `När jag kom till Sverige kände jag direkt att mitt liv var på väg in i ett nytt kapitel. Det var som om den kalla luften och de långa tystnaderna här sa till mig, med en sorts vänlighet: "Nu är det dags att börja om." \n
+Så det gjorde jag.\n
+\n
+Jag bar med mig tre passioner som jag hade odlat genom åren: programmering, design och fotografi. Tre olika trådar som i mitt huvud egentligen aldrig varit åtskilda. Jag ville väva ihop dem och förvandla dem till något som verkligen representerade mig. Inte bara ett jobb, utan ett hantverk — något som kunde ge mig glädje och samtidigt hjälpa människor att förverkliga sina idéer.\n
+\n
+Det var så Fantasiateljé föddes: ur ett behov, en dröm och en känsla av hem.\n
+\n
+Varför just "ateljé"? För att ett svenskt ateljé inte bara är en studio. Det är en levd plats: intim, varm, fylld av idéer och föremål som berättar historier. Ett rum som inte är minimalistiskt i verkligheten, även om det kan se ut så vid första anblicken. De riktiga svenska hemmen — de man inte ser i tidningar — är mysiga. Lampor som lyser redan vid fyra, koppar som står kvar på bordet, bokhyllor fulla av böcker som inte alls matchar. Det är platser där vardag, familj och kreativitet får andas.\n
+\n
+Den atmosfären inspirerade mig djupt.\n
+Jag ville att Fantasiateljé skulle bära samma energi: varmt, välkomnande, ärligt. En plats där teknik möter känsla, där det digitala inte känns kallt, där ett projekt aldrig bara är ett projekt.\n
+\n
+Fantasiateljé är mitt sätt att samla berättelser, bilder, färger och kod.\n
+En bro mellan det jag kan, det jag älskar och de som väljer att samarbeta med mig.\n
+\n
+Och det här är bara början.\n`
       }
     }
   },
