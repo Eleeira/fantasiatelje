@@ -24,16 +24,6 @@ export default function Footer({ t }) {
       </a>
     </nav>
 
-
-
-
-    {/* Right: social */}
-    <div className="flex items-center gap-3">
-      <a href="mailto:info@fantasiatelje.se" className="hover:text-ft-textMain">
-        ✉︎
-      </a>
-    </div>
-
   </div>
 
   {/* micro linea rame */}
