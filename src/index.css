@@ -41,16 +41,6 @@ html {
 }
 
 
-/* iOS: scroll normale, niente smoothing */
-@supports (-webkit-overflow-scrolling: touch) {
-  html {
-    scroll-behavior: auto !important;
-  }
-}
-
-
-
-
 
 body {
   @apply min-h-screen m-0 bg-[radial-gradient(circle_at_top,#251712_0,#050507_55%)] text-ft-textMain;
@@ -299,12 +289,6 @@ a, button {
 
 
 
-/* iOS Safari & browser iOS (WebKit) */
-@supports (-webkit-overflow-scrolling: touch) {
-  #global-bokeh {
-    display: none !important;
-  }
-}
 
 
 /* mobile in generale: niente animazione continua nel blog */
@@ -316,14 +300,6 @@ a, button {
 }
 
 
-
-@supports (-webkit-overflow-scrolling: touch) {
-  .backdrop-blur-md {
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-    background-color: rgba(0, 0, 0, 0.75) !important;
-  }
-}
 
 
 @media (max-width: 768px) {
@@ -348,3 +324,45 @@ a, button {
   }
 }
 
+
+
+/* ============= iOS ONLY ============= */
+@supports (-webkit-overflow-scrolling: touch) {
+
+  /* niente bokeh su iOS (surriscaldava) */
+  #global-bokeh {
+    display: none !important;
+  }
+
+  /* niente blur pesante su iOS */
+  .backdrop-blur-md {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background-color: rgba(0, 0, 0, 0.75) !important;
+  }
+
+  /* niente smooth scroll → Safari si incastra */
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  /* niente animazione blog-strip */
+  .blog-strip-track {
+    animation: none !important;
+    transform: none !important;
+  }
+
+  /* fade-up statico su iOS */
+  .fade-up {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+
+  .reveal-hidden,
+  .reveal-visible {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}

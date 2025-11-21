@@ -13,7 +13,7 @@ export default function Footer({ t }) {
 
     {/* Middle: menu minimal */}
     <nav className="flex items-center gap-4 uppercase tracking-[0.15em] text-[0.65rem]">
-      <a href="#home" className="hover:text-ft-textMain">
+      <a href="#services" className="hover:text-ft-textMain">
         {t('nav_services')}
       </a>
       <a href="#portfolio" className="hover:text-ft-textMain">
