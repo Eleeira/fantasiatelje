@@ -40,6 +40,18 @@ html {
   overflow-x: hidden;
 }
 
+
+/* iOS: scroll normale, niente smoothing */
+@supports (-webkit-overflow-scrolling: touch) {
+  html {
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+
+
 body {
   @apply min-h-screen m-0 bg-[radial-gradient(circle_at_top,#251712_0,#050507_55%)] text-ft-textMain;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -278,5 +290,61 @@ a, button {
 
 .dock-contact-link:hover::after {
   width: 100%;
+}
+
+
+
+
+
+
+
+
+/* iOS Safari & browser iOS (WebKit) */
+@supports (-webkit-overflow-scrolling: touch) {
+  #global-bokeh {
+    display: none !important;
+  }
+}
+
+
+/* mobile in generale: niente animazione continua nel blog */
+@media (max-width: 768px) {
+  .blog-strip-track {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
+
+
+@supports (-webkit-overflow-scrolling: touch) {
+  .backdrop-blur-md {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background-color: rgba(0, 0, 0, 0.75) !important;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.55);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .fade-up {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+
+  .reveal-hidden,
+  .reveal-visible {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
 }
 
