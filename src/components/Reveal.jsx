@@ -1,27 +1,17 @@
-// src/components/Reveal.jsx
-import { useEffect, useState } from 'react'
+import useInView from '../hooks/useInView'
 
-export default function Reveal({
-  as: Tag = 'div',
-  children,
-  className = '',
-  delay = 0,
-}) {
-  const [visible, setVisible] = useState(false)
+export default function Reveal({ children, as: Tag = 'div', className = '', delay = 0 }) {
+  const [ref, isVisible] = useInView()
 
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setVisible(true)
-    }, delay)
-    return () => clearTimeout(timeout)
-  }, [delay])
+  const stateClass = isVisible ? 'reveal-visible' : 'reveal-hidden'
 
-  const classes = [
-    className,
-    visible ? 'reveal-visible' : 'reveal-hidden',
-  ]
-    .filter(Boolean)
-    .join(' ')
-
-  return <Tag className={classes}>{children}</Tag>
+  return (
+    <Tag
+      ref={ref}
+      className={`${stateClass} ${className}`}
+      style={{ animationDelay: `${delay}ms` }}
+    >
+      {children}
+    </Tag>
+  )
 }

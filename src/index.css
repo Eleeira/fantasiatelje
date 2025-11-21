@@ -280,22 +280,3 @@ a, button {
   width: 100%;
 }
 
-
-
-/* 📱 MOBILE: niente fade, niente reveal – tutto visibile subito */
-@media (max-width: 640px) {
-  /* tutti gli elementi con fade-up diventano statici */
-  .fade-up {
-    opacity: 1 !important;
-    transform: none !important;
-    animation: none !important;
-  }
-
-  /* se usi anche Reveal con queste classi, spegniamo pure quello */
-  .reveal-hidden,
-  .reveal-visible {
-    opacity: 1 !important;
-    transform: none !important;
-    animation: none !important;
-  }
-}
