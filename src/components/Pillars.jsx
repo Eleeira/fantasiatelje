@@ -29,7 +29,7 @@ export default function Pillars({ t }) {
               </div>
 
               <div className="space-y-2">
-                <h3 className="section-title-bar text-[0.8rem] font-semibold">
+                <h3 className="pillar-title section-title-bar text-[0.8rem] font-semibold">
                 {t(`pillar${idx}_title`)}
               </h3>
 

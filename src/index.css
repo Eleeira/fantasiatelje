@@ -79,6 +79,27 @@ body {
     animation: fadeUp 0.6s ease-out;
   }
 
+
+  @layer components {
+  .pillar-title {
+    word-break: break-word;  /* permette di andare a capo dentro la parola */
+    hyphens: auto;           /* se il browser può, aggiunge un trattino */
+    line-height: 1.2;
+  }
+}
+
+/* opzionale: su schermi molto stretti riduciamo di un pelo la dimensione */
+@media (max-width: 400px) {
+  .pillar-title {
+    font-size: 0.75rem; /* un filo più piccola solo sui telefoni mini */
+  }
+}
+
+
+
+
+
+
   @keyframes fadeUp {
     from {
       opacity: 0;

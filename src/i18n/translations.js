@@ -601,7 +601,7 @@ contact_quote: 'Every project deserves a gentle space where it can breathe.'
     pillar3_text: 'Små, omsorgsfullt gjorda, responsiva sidor.',
     pillar3_link: 'Webbprojekt',
 
-pillar4_title: 'Översättningar',
+pillar4_title: 'Översättning Tjänster',
 pillar4_text: 'Mindre översättningar mellan svenska, engelska och italienska',
 pillar4_link: 'Översättningar',
 
