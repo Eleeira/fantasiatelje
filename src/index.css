@@ -44,7 +44,6 @@ body {
   @apply min-h-screen m-0 bg-[radial-gradient(circle_at_top,#251712_0,#050507_55%)] text-ft-textMain;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
-    overflow-x: hidden;
 
 }
 
@@ -145,8 +144,6 @@ body {
 
 
 
-
-
 a, button {
   cursor: pointer;
 }
@@ -209,19 +206,6 @@ a, button {
     opacity: 1;
     transform: translateY(0);
     animation: fadeUpOnScroll 0.5s ease-out; /* ~mezzo secondo */
-  }
-}
-
-
-
-
-/* Mobile: niente reveal, tieni tutto sempre visibile */
-@media (max-width: 640px) {
-  .reveal-hidden,
-  .reveal-visible {
-    opacity: 1 !important;
-    transform: none !important;
-    animation: none !important;
   }
 }
 
