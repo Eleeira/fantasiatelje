@@ -213,6 +213,20 @@ a, button {
 }
 
 
+
+
+/* Mobile: niente reveal, tieni tutto sempre visibile */
+@media (max-width: 640px) {
+  .reveal-hidden,
+  .reveal-visible {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}
+
+
+
 @keyframes bokehFloat {
   0% {
     transform: translateY(-10vh) translateX(0) scale(1);
