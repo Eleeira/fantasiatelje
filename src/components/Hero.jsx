@@ -72,7 +72,7 @@ export default function Hero({ lang, setLang, langs, t }) {
                  md:min-h-[480px]"
       style={{
         backgroundImage:
-          'linear-gradient(to bottom,rgba(0,0,0,0.4),rgba(5,5,7,0.9)),url(/hero-autumn.jpg)',
+          'linear-gradient(to bottom,rgba(0,0,0,0.4),rgba(5,5,7,0.9)),url(/hero-autumn.webp)',
         backgroundPosition: 'center',
         backgroundSize: 'cover'
       }}
