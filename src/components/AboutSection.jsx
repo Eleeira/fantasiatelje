@@ -29,7 +29,7 @@ export default function AboutSection({ t }) {
           {/* FOTO PERSONALE */}
           <div className="fade-up overflow-hidden rounded-none border border-white/10 bg-black/20 shadow-lg">
             <img
-              src="/hildur.jpg"
+              src="/hildur.webp"
               alt="Hildur portrait"
               className="w-full object-cover opacity-95 hover:opacity-100 transition-opacity duration-300"
             />

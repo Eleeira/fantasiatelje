@@ -57,7 +57,7 @@ export default function WhatsAppBubble({ lang, t }) {
   px-3 py-2
   rounded-none
   shadow-[0_10px_25px_rgba(0,0,0,0.55)]
-  hover:bg-black/80
+  hover:bg-black-[0_0_20px_rgba(184,117,62,0.35)]
   hover:shadow-[0_0_20px_rgba(184,117,62,0.35)]
   hover:translate-y-[-2px]
   transition-all duration-200

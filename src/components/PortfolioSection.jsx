@@ -35,9 +35,9 @@ const PORTFOLIO_IMAGES = {
     { src: '/portfolio/brand-2.jpg', caption: 'Identità minimale, carta stampata.' },
   ],
   web: [
-    { src: '/portfolio/web-1.jpg', caption: 'one-page 2025' },
-    { src: '/portfolio/web-2.jpg', caption: 'one-page 2025' },
-    { src: '/portfolio/web-3.jpg', caption: 'one-page 2025' },
+    { src: '/portfolio/web-1.webp', caption: 'one-page 2025' },
+    { src: '/portfolio/web-2.webp', caption: 'one-page 2025' },
+    { src: '/portfolio/web-3.webp', caption: 'one-page 2025' },
   ],
 }
 
