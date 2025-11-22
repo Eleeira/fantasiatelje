@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 
-export default function ContactSection({ t }) {
+export default function ContactSection({ t, lang }) {
   const [intent, setIntent] = useState(null)
   const [sent, setSent] = useState(false)
 
@@ -139,6 +139,20 @@ export default function ContactSection({ t }) {
     {t('contact_form_sent')}
   </div>
 )}
+
+
+
+{/* frase solo per Svezia */}
+{lang === 'sv' && (
+  <p className="mt-4 text-[0.75rem] text-ft-textMuted italic">
+    I Sverige fungerar mejl oftast bäst - skriv några rader om vad du behöver, så återkommer jag snart.
+  </p>
+)}
+
+
+
+
+
 
         {/* email diretta */}
         <div className="pt-4 border-t border-white/10">

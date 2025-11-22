@@ -23,11 +23,11 @@ const CATEGORIES = [
 // qui definisci le immagini per ogni categoria
 const PORTFOLIO_IMAGES = {
   photo: [
-    { src: '/photos/editorial-1.jpg', caption: 'Stockholm, 2024' },
-    { src: '/photos/editorial-2.jpg', caption: 'Stockholm, 2024' },
-    { src: '/photos/editorial-3.jpg', caption: 'Stockholm, 2024' },
-    { src: '/photos/editorial-4.jpg', caption: 'Stockholm, 2024' },
-    { src: '/photos/editorial-5.jpg', caption: 'Stockholm, 2024' },
+    { src: '/photos/editorial-1.webp', caption: 'Stockholm, 2024' },
+    { src: '/photos/editorial-2.webp', caption: 'Stockholm, 2024' },
+    { src: '/photos/editorial-3.webp', caption: 'Stockholm, 2024' },
+    { src: '/photos/editorial-4.webp', caption: 'Stockholm, 2024' },
+    { src: '/photos/editorial-5.webp', caption: 'Stockholm, 2024' },
     // ...
   ],
   brand: [
@@ -35,8 +35,9 @@ const PORTFOLIO_IMAGES = {
     { src: '/portfolio/brand-2.jpg', caption: 'Identità minimale, carta stampata.' },
   ],
   web: [
-    { src: '/portfolio/web-1.jpg', caption: 'Mini-sito one-page.' },
-    { src: '/portfolio/web-2.jpg', caption: 'Struttura pulita e leggibile.' },
+    { src: '/portfolio/web-1.jpg', caption: 'one-page 2025' },
+    { src: '/portfolio/web-2.jpg', caption: 'one-page 2025' },
+    { src: '/portfolio/web-3.jpg', caption: 'one-page 2025' },
   ],
 }
 

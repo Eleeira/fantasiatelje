@@ -24,6 +24,8 @@ export default function Footer({ t }) {
       </a>
     </nav>
 
+
+
   </div>
 
   {/* micro linea rame */}

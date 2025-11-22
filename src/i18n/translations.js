@@ -274,7 +274,8 @@ reviews_more_cta: 'Vedi tutte le recensioni su Google',
 
 
 
-contact_quote: 'Ogni progetto merita uno spazio gentile in cui respirare.'
+contact_quote: 'Ogni progetto merita uno spazio gentile in cui respirare.',
+whatsapp_label: 'Scrivimi su Whatsapp'
 
   },
 
@@ -561,7 +562,8 @@ reviews_more_cta: 'See all reviews on Google',
 
 
 
-contact_quote: 'Every project deserves a gentle space where it can breathe.'
+contact_quote: 'Every project deserves a gentle space where it can breathe.',
+whatsapp_label: 'Message me on WhatsApp'
 
   },
 
@@ -818,11 +820,6 @@ contact_form_sent: 'Meddelandet har skickats — tack!',
 
 
 
-
-
-
-
-
     side_contact_title: 'Hör av dig',
     side_contact_intro: 'Skriv några rader om dig, projektet och ungefärlig tidsplan.',
 
@@ -847,7 +844,8 @@ reviews_section_title: 'Vad kunderna säger',
 reviews_more_label: 'Vill du läsa fler omdömen?',
 reviews_more_cta: 'Se alla recensioner på Google',
 
-contact_quote: 'Varje projekt förtjänar ett stilla utrymme där det kan andas.'
+contact_quote: 'Varje projekt förtjänar ett stilla utrymme där det kan andas.',
+whatsapp_label: 'Skriv till mig på WhatsApp'
 
 
   }

@@ -16,48 +16,73 @@ import Footer from './components/Footer'
 import BlogSection from './components/BlogSection'
 import ReviewsSection from './components/ReviewSection'
 import SidebarQuote from './components/SidebarQuote'
+import WhatsappBubble from './components/WhatsappBubble'
 
 
-const LANGS = ['sv', 'en', 'it']
 
+const LANGS = ["sv", "en", "it"]
 
+// ----------------------
+// RILEVAMENTO LINGUA
+// ----------------------
+function detectInitialLang() {
+  if (typeof window === "undefined") return "sv"
+
+  const saved = window.localStorage.getItem("ft-lang")
+  if (saved && LANGS.includes(saved)) return saved
+
+  const navLang =
+    navigator.language ||
+    (Array.isArray(navigator.languages) ? navigator.languages[0] : "") ||
+    ""
+
+  const code = navLang.split("-")[0].toLowerCase()
+
+  if (code === "it") return "it"
+  if (code === "sv") return "sv"
+  return "en"
+}
+
+// ----------------------
+// COMPONENTE APP
+// ----------------------
 export default function App() {
+  // 1) lingua iniziale (browser → fallback)
+  const [lang, setLang] = useState(detectInitialLang)
 
+  // 2) salva sempre quando cambia
+  useEffect(() => {
+    window.localStorage.setItem("ft-lang", lang)
+  }, [lang])
 
-useEffect(() => {
-  const blockEverything = (e) => {
-    // blocca tasto destro
-    if (e.type === "contextmenu") e.preventDefault();
+  // 3) blocco tasto destro + combinazioni (come già avevi)
+  useEffect(() => {
+    const blockEverything = (e) => {
+      if (e.type === "contextmenu") e.preventDefault()
 
-    // blocca CTRL+S, CTRL+U, CTRL+P, CTRL+SHIFT+I
-    if (
-      (e.ctrlKey && ["s", "u", "p"].includes(e.key.toLowerCase())) ||
-      (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i")
-    ) {
-      e.preventDefault();
-      e.stopPropagation();
+      if (
+        (e.ctrlKey && ["s", "u", "p"].includes(e.key.toLowerCase())) ||
+        (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i")
+      ) {
+        e.preventDefault()
+        e.stopPropagation()
+      }
     }
-  };
 
-  document.addEventListener("contextmenu", blockEverything);
-  document.addEventListener("keydown", blockEverything);
+    document.addEventListener("contextmenu", blockEverything)
+    document.addEventListener("keydown", blockEverything)
 
-  return () => {
-    document.removeEventListener("contextmenu", blockEverything);
-    document.removeEventListener("keydown", blockEverything);
-  };
-}, []);
+    return () => {
+      document.removeEventListener("contextmenu", blockEverything)
+      document.removeEventListener("keydown", blockEverything)
+    }
+  }, [])
 
-
-
-  const [lang, setLang] = useState('sv')
-
+  // 4) funzione di traduzione
   const t = useMemo(
     () => (key) => translations[lang][key] ?? key,
     [lang]
   )
-
-
 
 
 
@@ -169,7 +194,7 @@ useEffect(() => {
     </Reveal>
 
     <Reveal as="div">
-      <ContactSection t={t} />
+      <ContactSection t={t} lang={lang} />
     </Reveal>
 
 
@@ -183,6 +208,8 @@ useEffect(() => {
 </main>
 
       <Footer t={t} lang={lang} />
+
+      <WhatsappBubble lang={lang} t={t} />
 
     </div>
   )
