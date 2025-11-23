@@ -240,6 +240,11 @@ contact_form_sent: 'Messaggio inviato — grazie!',
 
 
 
+contact_form_name_placeholder: "Il tuo nome",
+contact_form_email_placeholder: "La tua email",
+contact_form_message_placeholder: "Il tuo messaggio…",
+
+
 
 
 
@@ -528,6 +533,13 @@ contact_alt: 'Or write directly to:',
 
 contact_form_sent: 'Message sent — thank you!',
 
+contact_form_name_placeholder: "Your name",
+contact_form_email_placeholder: "Your email",
+contact_form_message_placeholder: "Your message…",
+
+
+
+
 
 
 
@@ -813,10 +825,17 @@ contact_form_send: 'Skicka',
 
 contact_alt: 'Eller skriv direkt till:',
 
-
-
-
 contact_form_sent: 'Meddelandet har skickats — tack!',
+
+contact_form_name_placeholder: "Ditt namn",
+contact_form_email_placeholder: "Din e-post",
+contact_form_message_placeholder: "Ditt meddelande…",
+
+
+
+
+
+
 
 
 

@@ -31,6 +31,8 @@ export default function AboutSection({ t }) {
             <img
               src="/hildur.webp"
               alt="Hildur portrait"
+              loading="lazy"
+              decoding="async"
               className="w-full object-cover opacity-95 hover:opacity-100 transition-opacity duration-300"
             />
           </div>

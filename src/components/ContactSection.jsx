@@ -85,6 +85,7 @@ export default function ContactSection({ t, lang }) {
     <input
       type="text"
       name="name"
+      placeholder={t('contact_form_name_placeholder')}
       required
       className="w-full rounded-none border border-white/10 bg-black/20 px-3 py-2 text-sm text-ft-textMain focus:border-ft-accentSoft/60 outline-none transition"
     />
@@ -97,6 +98,7 @@ export default function ContactSection({ t, lang }) {
     <input
       type="email"
       name="email"
+      placeholder={t('contact_form_name_placeholder')}
       required
       className="w-full rounded-none border border-white/10 bg-black/20 px-3 py-2 text-sm text-ft-textMain focus:border-ft-accentSoft/60 outline-none transition"
     />
@@ -109,6 +111,7 @@ export default function ContactSection({ t, lang }) {
     <textarea
       rows={5}
       name="message"
+      placeholder={t('contact_form_name_placeholder')}
       required
       className="w-full rounded-none border border-white/10 bg-black/20 px-3 py-2 text-sm text-ft-textMain focus:border-ft-accentSoft/60 outline-none transition resize-none"
     />
