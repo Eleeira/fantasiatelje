@@ -9,6 +9,8 @@ export default function SidebarQuote({ t }) {
         <img
           src="/hilde.png"
           alt="Hildur"
+          loading="lazy"
+          decoding="async"
           className="h-20 opacity-90"
         />
       </div>
