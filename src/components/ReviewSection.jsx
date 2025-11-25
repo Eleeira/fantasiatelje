@@ -2,7 +2,7 @@
 const reviews = [
   {
     id: 1,
-    name: 'Sara, ceramista',
+    name: 'Marina',
     source: 'E-mail',
     text_it: 'Hildur ha colto esattamente l’atmosfera del mio laboratorio. Le foto sembrano parlare da sole.',
     text_en: 'Hildur captured the exact atmosphere of my studio. The photos almost speak on their own.',
@@ -10,11 +10,11 @@ const reviews = [
   },
   {
     id: 2,
-    name: 'Jonas, piccolo brand di caffè',
-    source: 'Google',
-    text_it: 'Identità visiva semplice, ma perfetta per noi. Chiara, calma, riconoscibile.',
-    text_en: 'A simple visual identity, but perfect for us. Clear, calm and recognisable.',
-    text_sv: 'En enkel visuell identitet, men perfekt för oss. Tydlig, lugn och igenkännbar.'
+    name: 'Giuseppe',
+    source: 'E-mail',
+    text_it: 'Identità visiva semplice, ma perfetta per me. Chiara, calma, riconoscibile.',
+    text_en: 'A simple visual identity, but perfect for me. Clear, calm and recognisable.',
+    text_sv: 'En enkel visuell identitet, men perfekt för mig. Tydlig, lugn och igenkännbar.'
   }
 ]
 

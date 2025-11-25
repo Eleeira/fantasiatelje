@@ -48,7 +48,6 @@ pillar4_link: 'Traduzioni',
     
 
 portfolio_section_title: 'Fotografie e Progetti',    
-
 portfolio_editorial_label: "Fotografia",
 portfolio_brand_label: "Branding",
 portfolio_web_label: "Web & Layout",
@@ -62,6 +61,12 @@ portfolio_modal_brand_intro: "Studi visivi, palette e piccoli sistemi di identit
 portfolio_modal_web_intro: "Layout chiari, struttura essenziale e attenzione al ritmo visivo.",
 
 
+portfolio_photo_teaser_title: 'Editoriali e ritratti in luce naturale.',
+portfolio_brand_teaser_title: 'Piccoli brand, identità su misura.',
+portfolio_web_teaser_title: 'Siti leggeri, chiari, facili da usare.',
+portfolio_teaser_text: 'Qui vedi solo due esempi: nel portfolio completo trovi più lavori e dettagli.',
+portfolio_web_teaser_text: 'Clicca sulle anteprime per visitare i siti. Nel portfolio completo trovi altri progetti.',
+portfolio_more: 'Scopri di piú…',
 
 
 
@@ -346,6 +351,12 @@ portfolio_section_title: 'Photography & Projects',
   
 
 
+portfolio_photo_teaser_title: 'Editorial work and natural-light portraits.',
+portfolio_brand_teaser_title: 'Small brands with tailored identities.',
+portfolio_web_teaser_title: 'Lightweight, clear, user-friendly websites.',
+portfolio_teaser_text: 'You’re seeing only two examples here — the full portfolio includes more work and details.',
+portfolio_web_teaser_text: 'Click the previews to visit the websites. More projects are available in the full portfolio.',
+portfolio_more: 'More…',
 
 
 
@@ -641,6 +652,13 @@ portfolio_section_title: 'Fotografi & projekt',
     portfolio_modal_brand_intro: 'Visuella studier, paletter och små identitetssystem.',
     portfolio_modal_web_intro: 'Tydliga layouter, enkel struktur och fokus på visuell rytm.',
  
+
+    portfolio_photo_teaser_title: 'Editorial och porträtt i naturligt ljus.',
+portfolio_brand_teaser_title: 'Små varumärken med skräddarsydd identitet.',
+portfolio_web_teaser_title: 'Lätta, tydliga och användarvänliga webbplatser.',
+portfolio_teaser_text: 'Här ser du bara två exempel – i portfolion finns fler arbeten och mer info.',
+portfolio_web_teaser_text: 'Klicka på exemplen för att besöka sajterna. I portfolion finns fler projekt.',
+portfolio_more: 'Visa mer',
 
 
 

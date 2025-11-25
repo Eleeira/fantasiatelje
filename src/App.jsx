@@ -156,10 +156,6 @@ export default function App() {
       <ServicesDetail t={t} lang={lang} />
     </Reveal>
 
-<Reveal as="div">
-      <ReviewsSection t={t} lang={lang} />
-    </Reveal>
-
 
 
 
@@ -191,6 +187,10 @@ export default function App() {
 
     <Reveal as="div">
       <SidebarCalendar t={t} />
+    </Reveal>
+
+    <Reveal as="div">
+      <ReviewsSection t={t} lang={lang} />
     </Reveal>
 
     <Reveal as="div">
