@@ -25,11 +25,22 @@ const CATEGORIES = [
 // immagini per ogni categoria
 const PORTFOLIO_IMAGES = {
   photo: [
-    { src: '/photos/editorial-1.webp', caption: 'Stockholm, 2024' },
-    { src: '/photos/editorial-2.webp', caption: 'Stockholm, 2024' },
-    { src: '/photos/editorial-3.webp', caption: 'Stockholm, 2024' },
-    { src: '/photos/editorial-4.webp', caption: 'Stockholm, 2024' },
-    { src: '/photos/editorial-5.webp', caption: 'Stockholm, 2024' },
+    { src: '/photos/editorial-1.webp' },
+    { src: '/photos/editorial-2.webp' },
+    { src: '/photos/editorial-3.webp' },
+    { src: '/photos/editorial-4.webp' },
+    { src: '/photos/editorial-5.webp' },
+    { src: '/photos/old/old-1.jpeg'  },
+    { src: '/photos/old/old-2.jpeg'  },
+    { src: '/photos/old/old-3.jpeg'  },
+    { src: '/photos/old/old-4.jpeg'  },
+    { src: '/photos/old/old-5.jpeg'  },
+    { src: '/photos/old/old-6.jpeg'  },
+    { src: '/photos/old/old-7.jpeg'  },
+    { src: '/photos/old/old-8.jpeg'  },
+    { src: '/photos/old/old-9.jpeg'  },
+    { src: '/photos/old/old-10.jpeg' },
+    { src: '/photos/old/old-11.jpeg' },
   ],
   brand: [
     { src: '/portfolio/brand-1.jpg', caption: 'Logo + palette per artigiana.' },
@@ -49,7 +60,7 @@ const PORTFOLIO_IMAGES = {
     {
       src: '/portfolio/web-3.webp',
       caption: 'Restyling dataguard.se (this is just a case study, NOT a real website) 2025',
-      link: 'https://example3.com',
+      
     },
     {
       src: '/portfolio/web-4.webp',
@@ -59,17 +70,17 @@ const PORTFOLIO_IMAGES = {
     {
       src: '/portfolio/web-5.webp',
       caption: 'Legacy Fantasiateljé',
-      link: 'none',
+      
     },
     {
       src: '/portfolio/web-6.webp',
       caption: 'e-commerce & Shopify',
-      link: 'none',
+      
     },
     {
       src: '/portfolio/web-7.webp',
       caption: 'one-page website',
-      link: 'none',
+      
     },
   ],
 }
@@ -208,6 +219,7 @@ export default function PortfolioSection({ t, lang }) {
           title={getTitle(openType)}
           intro={getIntro(openType)}
           images={PORTFOLIO_IMAGES[openType] || []}
+          layout={openType}
         />
       )}
     </section>

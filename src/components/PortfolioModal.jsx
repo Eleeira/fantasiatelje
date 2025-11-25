@@ -1,21 +1,49 @@
 // src/components/PortfolioModal.jsx
-import { useState } from 'react'
 import { createPortal } from 'react-dom'
 
-export default function PortfolioModal({ open, onClose, title, images, intro }) {
-  const [index, setIndex] = useState(0)
+// qui decidi dove "tagliare" le sezioni delle FOTO
+// es: [4, 15] = prima sezione 0–3, seconda 4–14, terza il resto
+const PHOTO_SECTION_BREAKS = [5, 16]
+const PHOTO_SECTION_TITLES = [
+  'Stockholm, Sverige 2024',
+  'The Blackpool, Bari (IT), 2015',
+  'On Location'
+]
 
+
+
+export default function PortfolioModal({
+  open,
+  onClose,
+  title,
+  images,
+  intro,
+  layout, // 'photo' | 'brand' | 'web' ecc.
+}) {
   if (!open) return null
 
-  const current = images[index]
+  const isPhotoCollage = layout === 'photo'
 
-  const goPrev = () => {
-    setIndex((i) => (i === 0 ? images.length - 1 : i - 1))
+  // helper: spezza l'array delle foto in sezioni
+  const buildPhotoSections = (imgs) => {
+    const sections = []
+    let start = 0
+
+    const validBreaks = PHOTO_SECTION_BREAKS.filter((b) => b > 0 && b < imgs.length)
+
+    for (const br of validBreaks) {
+      sections.push(imgs.slice(start, br))
+      start = br
+    }
+
+    if (start < imgs.length) {
+      sections.push(imgs.slice(start))
+    }
+
+    return sections
   }
 
-  const goNext = () => {
-    setIndex((i) => (i === images.length - 1 ? 0 : i + 1))
-  }
+  const photoSections = isPhotoCollage ? buildPhotoSections(images) : []
 
   return createPortal(
     <div
@@ -30,6 +58,7 @@ export default function PortfolioModal({ open, onClose, title, images, intro }) 
             shadow-[0_0_40px_rgba(0,0,0,0.7)]
             p-4 sm:p-6 md:p-7
             flex flex-col gap-4
+            overflow-y-auto
           "
           onClick={(e) => e.stopPropagation()}
         >
@@ -53,59 +82,117 @@ export default function PortfolioModal({ open, onClose, title, images, intro }) 
             )}
           </div>
 
+          {/* ===================== */}
+          {/*      CONTENUTO       */}
+          {/* ===================== */}
 
+          {isPhotoCollage ? (
+            // 🎞 FOTO → sezioni + masonry, immagini “a vivo”
+            <div className="flex flex-col gap-6">
+              {photoSections.map((sectionImages, sectionIndex) => (
+  <div key={sectionIndex} className="flex flex-col gap-3">
 
+    {/* titolo della sezione */}
+    <div className="mt-4 mb-2 flex items-center gap-3 text-ft-textMuted/80">
+      <div className="h-px flex-1 bg-white/10" />
+      <span className="text-[0.75rem] uppercase tracking-[0.2em]">
+        {PHOTO_SECTION_TITLES[sectionIndex] || `Series ${sectionIndex + 1}`}
+      </span>
+      <div className="h-px flex-1 bg-white/10" />
+    </div>
 
-          {/* immagine principale */}
-          <div className="relative flex-1 flex items-center justify-center">
-  <div
-    className="
-      relative w-full max-w-4xl
-      max-h-[60vh]
-      rounded-none border border-white/12
-      bg-black/30
-      shadow-[0_18px_45px_rgba(0,0,0,0.75)]
-      flex items-center justify-center
-      px-3 py-3
-    "
-  >
-    <img
-      src={current.src}
-      alt={current.alt || title}
-      className="max-h-[52vh] w-full object-contain"
-    />
+    {/* masonry */}
+    <div
+      className="
+        columns-2
+        sm:columns-3
+        gap-2
+        [column-fill:balance]
+      "
+    >
+      {sectionImages.map((img, i) => (
+        <figure
+          key={img.src || `${sectionIndex}-${i}`}
+          className="mb-2 break-inside-avoid"
+        >
+          <img
+            src={img.src}
+            alt={img.caption || ''}
+            className="w-full h-auto object-contain"
+            loading="lazy"
+          />
+          {img.caption && (
+            <figcaption className="mt-1 text-[0.65rem] text-ft-textMuted/80 truncate">
+              {img.caption}
+            </figcaption>
+          )}
+        </figure>
+      ))}
+    </div>
+
   </div>
+))}
 
+            </div>
+          ) : (
+            // 🔳 BRAND / WEB → griglia semplice
+            <div
+              className="
+                grid gap-3
+                grid-cols-1
+                sm:grid-cols-2
+                md:grid-cols-3
+              "
+            >
+              {images.map((img, i) => {
+                const tile = (
+                  <div
+                    className="
+                      group relative overflow-hidden rounded-none
+                      bg-black/40 border border-white/10 p-2
+                    "
+                  >
+                    <img
+                      src={img.src}
+                      alt={img.alt || img.caption || `${title} #${i + 1}`}
+                      className="w-full h-auto max-h-[260px] object-contain transition-transform group-hover:scale-[1.03]"
+                      loading="lazy"
+                    />
+                    {img.caption && (
+                      <p className="mt-1 text-[0.65rem] text-ft-textMuted/80 truncate">
+                        {img.caption}
+                      </p>
+                    )}
+                  </div>
+                )
 
-            {/* frecce */}
-            {images.length > 1 && (
-              <>
-                <button
-                  onClick={goPrev}
-                  className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 text-[1.4rem] text-ft-textSoft hover:text-ft-textMain"
-                >
-                  ‹
-                </button>
-                <button
-                  onClick={goNext}
-                  className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 text-[1.4rem] text-ft-textSoft hover:text-ft-textMain"
-                >
-                  ›
-                </button>
-              </>
-            )}
-          </div>
+                // se è WEB con link → cliccabile
+                if (img.link) {
+                  return (
+                    <a
+                      key={img.src || i}
+                      href={img.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block"
+                    >
+                      {tile}
+                    </a>
+                  )
+                }
 
-          {/* info in basso: numero + caption */}
-          <div className="flex items-center justify-between text-[0.75rem] text-ft-textMuted">
-            <span>
-              {index + 1} / {images.length}
-            </span>
-            {current.caption && (
-              <span className="text-right">
-                {current.caption}
-              </span>
-            )}
+                return (
+                  <div key={img.src || i}>
+                    {tile}
+                  </div>
+                )
+              })}
+            </div>
+          )}
+
+          {/* info finale */}
+          <div className="mt-2 text-[0.75rem] text-ft-textMuted text-right">
+            {images.length} {images.length === 1 ? 'image' : 'images'}
           </div>
         </div>
       </div>
