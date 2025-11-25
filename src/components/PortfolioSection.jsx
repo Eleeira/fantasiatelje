@@ -5,17 +5,17 @@ import PortfolioModal from './PortfolioModal'
 const CATEGORIES = [
   {
     key: 'editorial',
-    img: 'portfolio-1.jpg',
+    img: 'portfolio-1.webp',
     type: 'photo',
   },
   {
     key: 'brand',
-    img: 'portfolio-2.jpg',
+    img: 'portfolio-2.webp',
     type: 'brand',
   },
   {
     key: 'web',
-    img: 'portfolio-3.jpg',
+    img: 'portfolio-3.webp',
     type: 'web',
   },
 ]
