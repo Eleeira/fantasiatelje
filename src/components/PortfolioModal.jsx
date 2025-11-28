@@ -3,11 +3,13 @@ import { createPortal } from 'react-dom'
 
 // qui decidi dove "tagliare" le sezioni delle FOTO
 // es: [4, 15] = prima sezione 0–3, seconda 4–14, terza il resto
-const PHOTO_SECTION_BREAKS = [5, 16]
+const PHOTO_SECTION_BREAKS = [5, 10, 16, 27]
 const PHOTO_SECTION_TITLES = [
   'Stockholm, Sverige 2024',
-  'The Blackpool, Bari (IT), 2015',
-  'On Location'
+  'Conversano, Italien 2023',
+  'Suomenlinna, Finland 2024',
+  'The Blackpool, Bari (IT), 2015'
+  
 ]
 
 
