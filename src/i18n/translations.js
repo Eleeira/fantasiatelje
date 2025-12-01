@@ -284,7 +284,7 @@ reviews_more_cta: 'Vedi tutte le recensioni su Google',
 
 
 
-contact_quote: 'Ogni progetto merita uno spazio gentile in cui respirare.',
+contact_quote: 'Ai miei genitori. Grazie per la pazienza e per quel coraggio silenzioso che mi ha sostenuta in ogni passo. Ogni parte di questo cammino porta anche il vostro nome.',
 whatsapp_label: 'Scrivimi su Whatsapp'
 
   },
@@ -585,7 +585,7 @@ reviews_more_cta: 'See all reviews on Google',
 
 
 
-contact_quote: 'Every project deserves a gentle space where it can breathe.',
+contact_quote: 'To my parents. Thank you for your patience and for that quiet courage that has supported me every step of the way. Every part of this journey carries your name as well.',
 whatsapp_label: 'Message me on WhatsApp'
 
   },
@@ -881,7 +881,7 @@ reviews_section_title: 'Vad kunderna säger',
 reviews_more_label: 'Vill du läsa fler omdömen?',
 reviews_more_cta: 'Se alla recensioner på Google',
 
-contact_quote: 'Varje projekt förtjänar ett stilla utrymme där det kan andas.',
+contact_quote: 'Till mina föräldrar. Tack för ert tålamod och för det tysta mod som har burit mig genom varje steg. Varje del av denna resa bär också ert namn.',
 whatsapp_label: 'Skriv till mig på WhatsApp'
 
 
